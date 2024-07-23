@@ -39,7 +39,7 @@ body, html {height: 100%}
     const minutes = now.getMinutes();
     const second = now.getSeconds();
 
-    const jam_str = `${hours.toString().padStart(2,'0'}:${minutes.toString().padStart(2,'0'}:${second.toString().padStart(2,'0'}`;
+    const jam_str = `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${second.toString().padStart(2,'0')}`;
     const tanggal_str = now.toLocaleDateString("id-ID",{weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
 
     jam_elem.innerText = jam_str;
